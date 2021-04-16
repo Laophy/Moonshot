@@ -11,8 +11,8 @@ client.on('ready', () => {
 
 
 client.on('message', msg =>{
-    if(msg.content === '!moonshot'){
-        msg.react(":heart:");
+    if(msg.content === `${BOT_PREFIX}moonshot`){
+        msg.react("❤️");
         msg.reply("Join the test flight!: http://testflight.apple.com/join/LINhIVOP");
         msg.member.roles.add("832459385292062763");
     }
